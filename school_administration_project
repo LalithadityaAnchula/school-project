@@ -1,0 +1,65 @@
+import csv
+def file(b):
+    with open('myfile.csv','a',newline='') as exfile:
+        w=csv.writer(exfile)
+        if exfile.tell() == 0:
+            w.writerow(["Id","Name","Mobile no","mail_id"])
+        w.writerow(b)
+a,b,c=dict(),list(),list()
+z=["Name: ","mobile no: ","mail id: "]
+check,check1,subcheck=True,True,True
+while check:
+    while check1:
+        while subcheck:
+            student_id=int(input("Enter student id: "))
+            if student_id in a:
+                print("\nThis id already exists,please enter unique id ..\n")
+            else:
+                subcheck=False
+        subcheck=True
+        b.append(student_id)
+        c.append("student id: "+str(student_id))
+        for loop in z:
+            temp=input("Enter student "+loop)
+            b.append(temp)
+            c.append(loop+temp)
+            a[student_id]=b
+        print("\nInput data of student is ....\n")
+        for loop in c:
+            print(loop)
+        c.clear()
+        print("\nType yes to confirm and no to enter again ..\n")
+        ver1=True
+        while ver1:
+            let=input("Type yes/no :")
+            print()
+            if let=='yes':
+                ver1=False
+                check1=False
+            elif let=='no':
+                ver1=False
+                check1=True
+                del a[student_id]
+                b.clear()
+            else:
+                print("Enter valid entry,please enter again..")
+                a[-1]=0
+    print("\nType yes if u want to enter more data and no if u dont want to enter more ....","\n")
+    file(b)
+    b.clear()
+    if 0 in a:
+        del a[0]
+    else:
+        pass
+    ver=True
+    while ver:
+        hm=input("Type yes/no :")
+        print()
+        if hm=='yes':
+            ver=False
+            check1=True
+        elif hm=='no':
+            ver=False
+            check=False
+        else:
+            print("Enter valid entry,please enter again..")
