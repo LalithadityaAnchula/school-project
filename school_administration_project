@@ -63,3 +63,95 @@ while check:
             check=False
         else:
             print("Enter valid entry,please enter again..")
+            
+            
+            
+            
+  #output for the above code is ...
+  
+  Enter student id: 992146
+Enter student Name: Lalithaditya
+Enter student mobile no: 8688538935
+Enter student mail id: lals@gmail.com
+
+Input data of student is ....
+
+student id: 992146
+Name: Lalithaditya
+mobile no: 8688538935
+mail id: lals@gmail.com
+
+Type yes to confirm and no to enter again ..
+
+Type yes/no :yes
+
+
+Type yes if u want to enter more data and no if u dont want to enter more ....
+
+Type yes/no :yes
+
+Enter student id: 992146
+
+This id already exists,please enter unique id ..
+
+Enter student id: 992143
+Enter student Name: Rahul
+Enter student mobile no: 8888888888
+Enter student mail id: ras@gegmail.com
+
+Input data of student is ....
+
+student id: 992143
+Name: Rahul
+mobile no: 8888888888
+mail id: ras@gegmail.com
+
+Type yes to confirm and no to enter again ..
+
+Type yes/no :no
+
+Enter student id: 992143
+Enter student Name: Rahul
+Enter student mobile no: 8888888889
+Enter student mail id: rahul@gmail.com
+
+Input data of student is ....
+
+student id: 992143
+Name: Rahul
+mobile no: 8888888889
+mail id: rahul@gmail.com
+
+Type yes to confirm and no to enter again ..
+
+Type yes/no :yes
+
+
+Type yes if u want to enter more data and no if u dont want to enter more ....
+
+Type yes/no :yes
+
+Enter student id: 992149
+Enter student Name: Priya
+Enter student mobile no: 999999999
+Enter student mail id: priya@gmail.com
+
+Input data of student is ....
+
+student id: 992149
+Name: Priya
+mobile no: 999999999
+mail id: priya@gmail.com
+
+Type yes to confirm and no to enter again ..
+
+Type yes/no :yes
+
+
+Type yes if u want to enter more data and no if u dont want to enter more ....
+
+Type yes/no :no
+
+
+Process returned 0 (0x0)        execution time : 181.086 s
+Press any key to continue . . .
